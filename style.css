@@ -1,0 +1,118 @@
+```css
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #282c34; /* Warna latar belakang gelap */
+color: #e0e0e0; /* Warna teks terang */
+margin: 0;
+padding: 20px;
+box-sizing: border-box;
+}
+
+.container {
+background-color: #3a3f47; /* Warna latar belakang container */
+padding: 40px;
+border-radius: 15px;
+box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+text-align: center;
+max-width: 450px;
+width: 100%;
+}
+
+h1 {
+color: #61dafb; /* Warna judul */
+margin-bottom: 25px;
+font-size: 2.2em;
+}
+
+h2 {
+color: #98c379; /* Warna sub-judul */
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 1.5em;
+}
+
+.clock-display {
+font-size: 4.5em; /* Ukuran jam */
+font-weight: bold;
+color: #f7e09e; /* Warna jam */
+letter-spacing: 3px;
+margin-bottom: 30px;
+background-color: #21252b;
+padding: 15px 25px;
+border-radius: 10px;
+display: inline-block; /* Agar background pas dengan teks */
+}
+
+.alarm-controls {
+margin-top: 20px;
+padding-top: 20px;
+border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.time-input {
+padding: 12px 15px;
+margin-right: 15px;
+border: none;
+border-radius: 8px;
+background-color: #4a4f58;
+color: #e0e0e0;
+font-size: 1.1em;
+outline: none;
+transition: background-color 0.3s ease;
+}
+
+.time-input:focus {
+background-color: #5b616e;
+}
+
+/* Styling untuk tombol */
+.btn {
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+font-size: 1.1em;
+font-weight: bold;
+margin: 5px;
+transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn.primary {
+background-color: #61dafb; /* Warna biru cerah */
+color: #282c34;
+}
+
+.btn.primary:hover:not(:disabled) {
+background-color: #4dc2ea;
+transform: translateY(-2px);
+}
+
+.btn.danger {
+background-color: #e06c75; /* Warna merah */
+color: #282c34;
+}
+
+.btn.danger:hover:not(:disabled) {
+background-color: #cc5b64;
+transform: translateY(-2px);
+}
+
+.btn:disabled {
+background-color: #555;
+color: #aaa;
+cursor: not-allowed;
+}
+
+.status-message {
+margin-top: 25px;
+font-size: 1.1em;
+color: #f7e09e;
+font-weight: bold;
+}
+```
+
+---

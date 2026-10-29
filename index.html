@@ -1,0 +1,44 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jam & Alarmku</title>
+<!-- Link ke file CSS untuk styling (opsional, tapi disarankan) -->
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+<div class="container">
+<h1>Jam Digital</h1>
+<!-- Elemen untuk menampilkan jam -->
+<div id="displayClock" class="clock-display">00:00:00</div>
+
+<div class="alarm-controls">
+<h2>Atur Alarm</h2>
+<!-- Input untuk mengatur waktu alarm -->
+<input type="time" id="alarmTime" class="time-input">
+
+<!-- Tombol untuk mengatur alarm -->
+<button id="setAlarmButton" class="btn primary">Set Alarm</button>
+
+<!-- Tombol untuk menghentikan alarm -->
+<button id="stopAlarmButton" class="btn danger">Stop Alarm</button>
+</div>
+
+<!-- Status Alarm (opsional, untuk feedback ke pengguna) -->
+<p id="alarmStatus" class="status-message"></p>
+</div>
+
+<!-- Elemen audio untuk suara alarm -->
+<!-- Pastikan path src="sounds/999-social-credit-siren.mp3" sesuai dengan lokasi file MP3 kamu -->
+<audio id="alarmSound" src="sounds/999-social-credit-siren.mp3" preload="auto"></audio>
+
+<!-- Link ke file JavaScript kamu -->
+<!-- WAJIB diletakkan di akhir body agar elemen HTML sudah dimuat sebelum diakses JS -->
+<script src="script.js"></script>
+</body>
+</html>
+```
+
+---
